@@ -1,0 +1,134 @@
+
+
+
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+warnings.filterwarnings("ignore", category=UserWarning)
+
+import os
+import numpy as np
+from scipy.io import loadmat
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.pipeline import make_pipeline
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import roc_auc_score
+from mne import create_info
+from mne.io import RawArray
+from mne.filter import filter_data
+from mne.decoding import CSP
+from mne.preprocessing import ICA
+from autoreject import AutoReject
+import joblib
+
+# === DATA PATH ===
+data_dir = r'C:\Users\dorak\Documents\IMbci\MNE-bnci-data\database\data-sets\004-2014'
+mat_files = [f for f in os.listdir(data_dir) if f.endswith('.mat')]
+print("✅ .mat files found:", mat_files)
+
+if not mat_files:
+    raise ValueError("❌ No .mat files found in the directory!")
+
+X_all, y_all = [], []
+sampling_rate = 250  # Hz
+n_times = 1125       # 4.5 seconds
+
+# === Channel Info ===
+ch_names = ['C3', 'Cz', 'C4']  # Example for 6-channel setup
+ch_types = ['eeg'] * len(ch_names)
+info = create_info(ch_names=ch_names, sfreq=sampling_rate, ch_types=ch_types)
+
+# === Load, Clean, Epoch ===
+for mat_file in mat_files:
+    mat_path = os.path.join(data_dir, mat_file)
+    mat = loadmat(mat_path, struct_as_record=False, squeeze_me=True)
+
+    if 'data' not in mat:
+        print(f"⚠️ Skipping {mat_file} — no 'data' key found")
+        continue
+
+    data_struct = mat['data'][0,0]
+    raw_data = data_struct['X'].T
+    y = data_struct['y'].squeeze()
+    trials = data_struct['trial'].squeeze()
+
+
+    if raw_data.shape[0] != len(ch_names):
+        print(f"⚠️ {mat_file}: Unexpected number of channels. Skipping.")
+        continue
+
+    print(f"✅ Loaded {mat_file}: raw shape {raw_data.shape}, y shape {y.shape}, trials {trials.shape}")
+
+    # === Filter ===
+    raw_data = filter_data(raw_data, sfreq=sampling_rate, l_freq=8, h_freq=32)
+
+    # === ICA (remove artifacts before epoching) ===
+    raw_mne = RawArray(raw_data, info)
+    ica = ICA(n_components=6, random_state=42)
+    ica.fit(raw_mne)
+    raw_clean = ica.apply(raw_mne)
+    raw_data = raw_clean.get_data()
+
+    # === Epoching ===
+    epochs, labels = [], []
+    for i, start in enumerate(trials):
+        if start + n_times > raw_data.shape[1]:
+            continue
+
+        epoch = raw_data[:, start:start + n_times]  # shape: (n_channels, n_times)
+        if i < len(y):
+            epochs.append(epoch)
+            labels.append(y[i])
+
+    if not epochs:
+        print(f"⚠️ Skipping {mat_file}: No usable epochs")
+        continue
+
+    X = np.stack(epochs)  # (n_epochs, n_channels, n_times)
+    y_clean = np.array(labels)
+
+    # === Autoreject ===
+    ar = AutoReject(random_state=42)
+    X_clean, reject_log = ar.fit_transform(X, return_log=True)
+    y_clean = y_clean[~reject_log.bad_epochs]
+
+    if len(X_clean) == 0:
+        print(f"⚠️ All epochs rejected after autoreject for {mat_file}")
+        continue
+
+    print(f"✅ {mat_file}: Final clean epochs = {X_clean.shape[0]}")
+    X_all.append(X_clean)
+    y_all.append(y_clean)
+
+# === Final Stack ===
+if not X_all:
+    raise RuntimeError("❌ No valid epochs found in any file. Exiting.")
+
+X_all = np.concatenate(X_all, axis=0)
+y_all = np.hstack(y_all)
+print(f"🎯 FINAL DATA SHAPE: X={X_all.shape}, y={y_all.shape}")
+
+# === CSP + Classifier Pipeline ===
+csp_pipeline = make_pipeline(
+    CSP(n_components=6, reg='ledoit_wolf'),
+    LogisticRegression(max_iter=500, C=0.1)
+)
+csp_pipeline.fit(X_all, y_all)
+
+# === Evaluate ===
+y_pred = csp_pipeline.predict(X_all)
+roc = roc_auc_score(y_all, y_pred)
+print(f"🔥 CSP ROC AUC Score (train==test): {roc:.4f}")
+
+# === Save Model ===
+joblib.dump(csp_pipeline, 'bci_csp_pipeline.pkl')
+print("✅ CSP Model saved as 'bci_csp_pipeline.pkl'")
+
+# === Plot Class Distribution ===
+plt.figure(figsize=(6, 4))
+sns.countplot(x=y_all)
+plt.title("Class Distribution")
+plt.xlabel("Class")
+plt.ylabel("Count")
+plt.tight_layout()
+plt.show()

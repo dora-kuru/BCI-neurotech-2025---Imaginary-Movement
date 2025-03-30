@@ -1,0 +1,702 @@
+24.9960 	WARNING 	Requested an unavailable screen number - using first available.
+25.4671 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020E55C0A370>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020E55C0A310>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000020E59913490>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=1, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='pix', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+25.4672 	EXP 	window1: backgroundImage = None
+25.4672 	EXP 	window1: backgroundFit = 'cover'
+25.4702 	EXP 	Created unnamed ShapeStim = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, draggable=False, fillColor=array([0.00392157, 0.00392157, 0.00392157]), fillColorSpace='rgb', fillRGB=array([0.00392157, 0.00392157, 0.00392157]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=1, name='unnamed ShapeStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([10., 10.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+25.4715 	EXP 	Created unnamed ShapeStim = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, draggable=False, fillColor=array([0.00392157, 0.00392157, 0.00392157]), fillColorSpace='rgb', fillRGB=array([0.00392157, 0.00392157, 0.00392157]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=1, name='unnamed ShapeStim', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([10., 10.]), units='pix', vertices=ndarray(...), win=Window(...), windingRule=None)
+25.5211 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=32.0, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='REST\nPRESS BUTTON TO START', units='pix', win=Window(...), wrapWidth=500)
+25.5260 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=32.0, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+25.5295 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=32.0, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='pix', win=Window(...), wrapWidth=500)
+25.5313 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=32.0, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='LEFT_HAND', units='pix', win=Window(...), wrapWidth=500)
+25.5327 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([0.00392157, 0.00392157, 0.00392157]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=32.0, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='RIGHT_HAND', units='pix', win=Window(...), wrapWidth=500)
+25.5388 	EXP 	MARKER: 94
+28.5321 	DATA 	Keypress: space
+28.5406 	EXP 	MARKER: 93
+28.5416 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+38.5426 	EXP 	MARKER: 92
+38.5440 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+38.5471 	EXP 	MARKER: 91
+42.3489 	DATA 	Keypress: space
+42.3502 	EXP 	MARKER: 90
+42.3606 	EXP 	MARKER: 99
+42.3613 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+47.3692 	EXP 	MARKER: 0
+47.3699 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+49.8710 	EXP 	MARKER: 97
+49.8718 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+51.8736 	EXP 	MARKER: 96
+51.8744 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+57.8764 	EXP 	MARKER: 95
+57.8773 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+58.8786 	EXP 	MARKER: 99
+58.8793 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+63.8872 	EXP 	MARKER: 0
+63.8881 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+66.3892 	EXP 	MARKER: 97
+66.3900 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+68.3914 	EXP 	MARKER: 96
+68.3923 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+74.3940 	EXP 	MARKER: 95
+74.3949 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+75.3961 	EXP 	MARKER: 99
+75.3969 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+80.3987 	EXP 	MARKER: 1
+80.3994 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+82.9006 	EXP 	MARKER: 97
+82.9015 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+84.9027 	EXP 	MARKER: 96
+84.9036 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+90.9048 	EXP 	MARKER: 95
+90.9056 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+91.9068 	EXP 	MARKER: 99
+91.9077 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+96.9093 	EXP 	MARKER: 1
+96.9102 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+99.4114 	EXP 	MARKER: 97
+99.4124 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+101.4135 	EXP 	MARKER: 96
+101.4143 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+107.4160 	EXP 	MARKER: 95
+107.4167 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+108.4180 	EXP 	MARKER: 99
+108.4188 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+113.4209 	EXP 	MARKER: 0
+113.4218 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+115.9237 	EXP 	MARKER: 97
+115.9250 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+117.9261 	EXP 	MARKER: 96
+117.9272 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+123.9292 	EXP 	MARKER: 95
+123.9301 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+124.9311 	EXP 	MARKER: 99
+124.9318 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+129.9397 	EXP 	MARKER: 0
+129.9405 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+132.4423 	EXP 	MARKER: 97
+132.4435 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+134.4447 	EXP 	MARKER: 96
+134.4476 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+140.4489 	EXP 	MARKER: 95
+140.4499 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+141.4511 	EXP 	MARKER: 99
+141.4521 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+146.4533 	EXP 	MARKER: 1
+146.4543 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+148.9563 	EXP 	MARKER: 97
+148.9573 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+150.9585 	EXP 	MARKER: 96
+150.9591 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+156.9606 	EXP 	MARKER: 95
+156.9614 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+157.9631 	EXP 	MARKER: 99
+157.9639 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+162.9651 	EXP 	MARKER: 1
+162.9657 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+165.4669 	EXP 	MARKER: 97
+165.4676 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+167.4687 	EXP 	MARKER: 96
+167.4693 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+173.4708 	EXP 	MARKER: 95
+173.4716 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+174.4729 	EXP 	MARKER: 99
+174.4736 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+179.4749 	EXP 	MARKER: 0
+179.4757 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+181.9775 	EXP 	MARKER: 97
+181.9786 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+183.9800 	EXP 	MARKER: 96
+183.9811 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+189.9822 	EXP 	MARKER: 95
+189.9829 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+190.9847 	EXP 	MARKER: 99
+190.9855 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+195.9868 	EXP 	MARKER: 1
+195.9877 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+198.4894 	EXP 	MARKER: 97
+198.4902 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+200.4914 	EXP 	MARKER: 96
+200.4920 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+206.4937 	EXP 	MARKER: 95
+206.4947 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+207.4957 	EXP 	MARKER: 89
+207.4964 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+207.4995 	EXP 	MARKER: 94
+215.3242 	DATA 	Keypress: lalt
+261.7514 	DATA 	Keypress: lalt
+267.1354 	DATA 	Keypress: space
+267.2192 	EXP 	MARKER: 93
+267.2241 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+269.7574 	DATA 	Keypress: space
+277.2215 	EXP 	MARKER: 92
+277.2225 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+277.2246 	EXP 	MARKER: 91
+289.8873 	DATA 	Keypress: space
+289.8887 	EXP 	MARKER: 90
+289.8958 	EXP 	MARKER: 99
+289.8965 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+294.8980 	EXP 	MARKER: 0
+294.8988 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+297.4061 	EXP 	MARKER: 97
+297.4069 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+299.4087 	EXP 	MARKER: 96
+299.4123 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+305.4134 	EXP 	MARKER: 95
+305.4147 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+306.4156 	EXP 	MARKER: 99
+306.4168 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+311.4183 	EXP 	MARKER: 1
+311.4194 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+313.9208 	EXP 	MARKER: 97
+313.9217 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+315.9228 	EXP 	MARKER: 96
+315.9240 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+321.9251 	EXP 	MARKER: 95
+321.9256 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+322.9268 	EXP 	MARKER: 99
+322.9278 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+327.9296 	EXP 	MARKER: 1
+327.9312 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+330.4329 	EXP 	MARKER: 97
+330.4337 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+332.4355 	EXP 	MARKER: 96
+332.4366 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+338.4379 	EXP 	MARKER: 95
+338.4387 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+339.4399 	EXP 	MARKER: 99
+339.4409 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+344.4483 	EXP 	MARKER: 1
+344.4491 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+346.9507 	EXP 	MARKER: 97
+346.9516 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+348.9536 	EXP 	MARKER: 96
+348.9545 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+354.9555 	EXP 	MARKER: 95
+354.9563 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+355.9572 	EXP 	MARKER: 99
+355.9580 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+360.9654 	EXP 	MARKER: 0
+360.9661 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+363.4672 	EXP 	MARKER: 97
+363.4679 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+365.4690 	EXP 	MARKER: 96
+365.4698 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+371.4712 	EXP 	MARKER: 95
+371.4720 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+372.4731 	EXP 	MARKER: 99
+372.4739 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+377.4815 	EXP 	MARKER: 1
+377.4824 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+379.9835 	EXP 	MARKER: 97
+379.9842 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+381.9856 	EXP 	MARKER: 96
+381.9867 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+387.9883 	EXP 	MARKER: 95
+387.9911 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+388.9926 	EXP 	MARKER: 99
+388.9935 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+393.9951 	EXP 	MARKER: 0
+393.9958 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+396.4970 	EXP 	MARKER: 97
+396.4982 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+398.4999 	EXP 	MARKER: 96
+398.5008 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+404.5019 	EXP 	MARKER: 95
+404.5028 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+405.5039 	EXP 	MARKER: 99
+405.5046 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+410.5058 	EXP 	MARKER: 1
+410.5072 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+413.0085 	EXP 	MARKER: 97
+413.0099 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+415.0116 	EXP 	MARKER: 96
+415.0122 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+421.0199 	EXP 	MARKER: 95
+421.0207 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+422.0216 	EXP 	MARKER: 99
+422.0224 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+427.0241 	EXP 	MARKER: 0
+427.0249 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+429.5261 	EXP 	MARKER: 97
+429.5267 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+431.5279 	EXP 	MARKER: 96
+431.5285 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+437.5359 	EXP 	MARKER: 95
+437.5375 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+438.5386 	EXP 	MARKER: 99
+438.5398 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+443.5471 	EXP 	MARKER: 0
+443.5477 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+446.0495 	EXP 	MARKER: 97
+446.0503 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+448.0516 	EXP 	MARKER: 96
+448.0522 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+454.0537 	EXP 	MARKER: 95
+454.0548 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+455.0558 	EXP 	MARKER: 89
+455.0576 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+455.0619 	EXP 	MARKER: 94
+466.8817 	DATA 	Keypress: space
+466.8834 	EXP 	MARKER: 93
+466.8844 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+476.8858 	EXP 	MARKER: 92
+476.8867 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+476.8944 	EXP 	MARKER: 91
+483.3794 	DATA 	Keypress: space
+483.3807 	EXP 	MARKER: 90
+483.3880 	EXP 	MARKER: 99
+483.3886 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+488.3904 	EXP 	MARKER: 1
+488.3913 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+490.8926 	EXP 	MARKER: 97
+490.8935 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+492.8952 	EXP 	MARKER: 96
+492.8963 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+498.8973 	EXP 	MARKER: 95
+498.8987 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+499.9001 	EXP 	MARKER: 99
+499.9018 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+504.9031 	EXP 	MARKER: 1
+504.9043 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+507.4056 	EXP 	MARKER: 97
+507.4070 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+509.4084 	EXP 	MARKER: 96
+509.4095 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+515.4107 	EXP 	MARKER: 95
+515.4117 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+516.4129 	EXP 	MARKER: 99
+516.4140 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+521.4159 	EXP 	MARKER: 1
+521.4170 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+523.9179 	EXP 	MARKER: 97
+523.9213 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+525.9228 	EXP 	MARKER: 96
+525.9236 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+531.9313 	EXP 	MARKER: 95
+531.9321 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+532.9335 	EXP 	MARKER: 99
+532.9343 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+537.9359 	EXP 	MARKER: 0
+537.9367 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+540.4383 	EXP 	MARKER: 97
+540.4394 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+542.4405 	EXP 	MARKER: 96
+542.4416 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+548.4430 	EXP 	MARKER: 95
+548.4439 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+549.4455 	EXP 	MARKER: 99
+549.4465 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+554.4486 	EXP 	MARKER: 0
+554.4495 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+556.9506 	EXP 	MARKER: 97
+556.9516 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+558.9532 	EXP 	MARKER: 96
+558.9542 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+564.9566 	EXP 	MARKER: 95
+564.9579 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+565.9597 	EXP 	MARKER: 99
+565.9605 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+570.9616 	EXP 	MARKER: 1
+570.9623 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+573.4635 	EXP 	MARKER: 97
+573.4644 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+575.4656 	EXP 	MARKER: 96
+575.4664 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+581.4677 	EXP 	MARKER: 95
+581.4686 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+582.4703 	EXP 	MARKER: 99
+582.4717 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+587.4730 	EXP 	MARKER: 0
+587.4739 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+589.9815 	EXP 	MARKER: 97
+589.9823 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+591.9838 	EXP 	MARKER: 96
+591.9846 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+597.9856 	EXP 	MARKER: 95
+597.9870 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+598.9880 	EXP 	MARKER: 99
+598.9886 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+603.9899 	EXP 	MARKER: 1
+603.9907 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+606.4919 	EXP 	MARKER: 97
+606.4927 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+608.4940 	EXP 	MARKER: 96
+608.4948 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+614.4962 	EXP 	MARKER: 95
+614.4971 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+615.4979 	EXP 	MARKER: 99
+615.4986 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+620.5002 	EXP 	MARKER: 0
+620.5010 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+623.0023 	EXP 	MARKER: 97
+623.0036 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+625.0053 	EXP 	MARKER: 96
+625.0061 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+631.0073 	EXP 	MARKER: 95
+631.0082 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+632.0098 	EXP 	MARKER: 99
+632.0104 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+637.0119 	EXP 	MARKER: 0
+637.0126 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+639.5140 	EXP 	MARKER: 97
+639.5150 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+641.5223 	EXP 	MARKER: 96
+641.5233 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+647.5247 	EXP 	MARKER: 95
+647.5256 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+648.5267 	EXP 	MARKER: 89
+648.5276 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+648.5295 	EXP 	MARKER: 94
+683.7680 	DATA 	Keypress: space
+683.7758 	EXP 	MARKER: 93
+683.7773 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+693.7849 	EXP 	MARKER: 92
+693.7859 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+693.7914 	EXP 	MARKER: 91
+703.3231 	DATA 	Keypress: space
+703.3242 	EXP 	MARKER: 90
+703.3260 	EXP 	MARKER: 99
+703.3266 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+708.3280 	EXP 	MARKER: 0
+708.3289 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+710.8300 	EXP 	MARKER: 97
+710.8306 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+712.8318 	EXP 	MARKER: 96
+712.8331 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+718.8344 	EXP 	MARKER: 95
+718.8354 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+719.8365 	EXP 	MARKER: 99
+719.8390 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+724.8404 	EXP 	MARKER: 1
+724.8412 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+727.3428 	EXP 	MARKER: 97
+727.3437 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+729.3450 	EXP 	MARKER: 96
+729.3460 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+735.3472 	EXP 	MARKER: 95
+735.3484 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+736.3498 	EXP 	MARKER: 99
+736.3508 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+741.3528 	EXP 	MARKER: 0
+741.3535 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+743.8547 	EXP 	MARKER: 97
+743.8553 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+745.8566 	EXP 	MARKER: 96
+745.8576 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+751.8589 	EXP 	MARKER: 95
+751.8601 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+752.8616 	EXP 	MARKER: 99
+752.8653 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+757.8667 	EXP 	MARKER: 1
+757.8678 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+760.3756 	EXP 	MARKER: 97
+760.3769 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+762.3849 	EXP 	MARKER: 96
+762.3857 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+768.3874 	EXP 	MARKER: 95
+768.3883 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+769.3895 	EXP 	MARKER: 99
+769.3903 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+774.3979 	EXP 	MARKER: 0
+774.3988 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+776.8999 	EXP 	MARKER: 97
+776.9006 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+778.9016 	EXP 	MARKER: 96
+778.9025 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+784.9040 	EXP 	MARKER: 95
+784.9050 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+785.9061 	EXP 	MARKER: 99
+785.9067 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+790.9088 	EXP 	MARKER: 0
+790.9097 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+793.4130 	EXP 	MARKER: 97
+793.4137 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+795.4151 	EXP 	MARKER: 96
+795.4162 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+801.4239 	EXP 	MARKER: 95
+801.4248 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+802.4257 	EXP 	MARKER: 99
+802.4276 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+807.4294 	EXP 	MARKER: 0
+807.4305 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+809.9318 	EXP 	MARKER: 97
+809.9324 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+811.9342 	EXP 	MARKER: 96
+811.9353 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+817.9433 	EXP 	MARKER: 95
+817.9441 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+818.9448 	EXP 	MARKER: 99
+818.9456 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+823.9529 	EXP 	MARKER: 1
+823.9536 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+826.4552 	EXP 	MARKER: 97
+826.4560 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+828.4573 	EXP 	MARKER: 96
+828.4581 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+834.4592 	EXP 	MARKER: 95
+834.4599 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+835.4612 	EXP 	MARKER: 99
+835.4622 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+840.4641 	EXP 	MARKER: 1
+840.4648 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+842.9665 	EXP 	MARKER: 97
+842.9674 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+844.9690 	EXP 	MARKER: 96
+844.9717 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+850.9729 	EXP 	MARKER: 95
+850.9737 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+851.9746 	EXP 	MARKER: 99
+851.9754 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+856.9768 	EXP 	MARKER: 1
+856.9788 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+859.4803 	EXP 	MARKER: 97
+859.4811 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+861.4823 	EXP 	MARKER: 96
+861.4833 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+867.4849 	EXP 	MARKER: 95
+867.4859 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+868.4870 	EXP 	MARKER: 89
+868.4877 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+868.4943 	EXP 	MARKER: 94
+899.2577 	DATA 	Keypress: space
+899.2591 	EXP 	MARKER: 93
+899.2601 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+909.2612 	EXP 	MARKER: 92
+909.2620 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+909.2643 	EXP 	MARKER: 91
+917.3040 	DATA 	Keypress: lalt
+980.3149 	DATA 	Keypress: space
+980.3990 	EXP 	MARKER: 90
+980.4325 	EXP 	MARKER: 99
+980.4346 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+985.4354 	EXP 	MARKER: 0
+985.4361 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+987.9373 	EXP 	MARKER: 97
+987.9383 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+989.9395 	EXP 	MARKER: 96
+989.9405 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+995.9416 	EXP 	MARKER: 95
+995.9423 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+996.9434 	EXP 	MARKER: 99
+996.9444 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1001.9456 	EXP 	MARKER: 0
+1001.9462 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1004.4474 	EXP 	MARKER: 97
+1004.4486 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1006.4501 	EXP 	MARKER: 96
+1006.4511 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1012.4525 	EXP 	MARKER: 95
+1012.4536 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1013.4546 	EXP 	MARKER: 99
+1013.4556 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1018.4571 	EXP 	MARKER: 1
+1018.4579 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1020.9594 	EXP 	MARKER: 97
+1020.9602 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1022.9620 	EXP 	MARKER: 96
+1022.9633 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1028.9651 	EXP 	MARKER: 95
+1028.9659 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1029.9670 	EXP 	MARKER: 99
+1029.9678 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1034.9690 	EXP 	MARKER: 0
+1034.9703 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1037.4714 	EXP 	MARKER: 97
+1037.4722 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1039.4734 	EXP 	MARKER: 96
+1039.4744 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1045.4756 	EXP 	MARKER: 95
+1045.4768 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1046.4779 	EXP 	MARKER: 99
+1046.4786 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1051.4804 	EXP 	MARKER: 0
+1051.4813 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1053.9826 	EXP 	MARKER: 97
+1053.9835 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1055.9851 	EXP 	MARKER: 96
+1055.9859 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1061.9874 	EXP 	MARKER: 95
+1061.9882 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1062.9894 	EXP 	MARKER: 99
+1062.9913 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1067.9932 	EXP 	MARKER: 1
+1067.9944 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1070.4962 	EXP 	MARKER: 97
+1070.4970 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1072.4981 	EXP 	MARKER: 96
+1072.4989 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1078.5000 	EXP 	MARKER: 95
+1078.5008 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1079.5018 	EXP 	MARKER: 99
+1079.5028 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1084.5048 	EXP 	MARKER: 1
+1084.5056 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1087.0069 	EXP 	MARKER: 97
+1087.0076 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1089.0158 	EXP 	MARKER: 96
+1089.0165 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1095.0179 	EXP 	MARKER: 95
+1095.0185 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1096.0197 	EXP 	MARKER: 99
+1096.0209 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1101.0217 	EXP 	MARKER: 0
+1101.0226 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1103.5245 	EXP 	MARKER: 97
+1103.5257 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1105.5269 	EXP 	MARKER: 96
+1105.5277 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1111.5355 	EXP 	MARKER: 95
+1111.5363 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1112.5374 	EXP 	MARKER: 99
+1112.5385 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1117.5399 	EXP 	MARKER: 1
+1117.5406 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1120.0423 	EXP 	MARKER: 97
+1120.0431 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1122.0442 	EXP 	MARKER: 96
+1122.0450 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1128.0463 	EXP 	MARKER: 95
+1128.0474 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1129.0490 	EXP 	MARKER: 99
+1129.0498 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1134.0512 	EXP 	MARKER: 1
+1134.0520 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1136.5534 	EXP 	MARKER: 97
+1136.5541 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1138.5559 	EXP 	MARKER: 96
+1138.5569 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1144.5587 	EXP 	MARKER: 95
+1144.5597 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1145.5603 	EXP 	MARKER: 89
+1145.5612 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1145.5655 	EXP 	MARKER: 94
+1151.5343 	DATA 	Keypress: space
+1151.5361 	EXP 	MARKER: 93
+1151.5371 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1161.5380 	EXP 	MARKER: 92
+1161.5390 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1161.5511 	EXP 	MARKER: 91
+1195.8602 	DATA 	Keypress: space
+1195.8614 	EXP 	MARKER: 90
+1195.8702 	EXP 	MARKER: 99
+1195.8709 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1200.8736 	EXP 	MARKER: 0
+1200.8743 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1203.3757 	EXP 	MARKER: 97
+1203.3766 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1205.3782 	EXP 	MARKER: 96
+1205.3791 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1211.3810 	EXP 	MARKER: 95
+1211.3819 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1212.3834 	EXP 	MARKER: 99
+1212.3842 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1217.3918 	EXP 	MARKER: 0
+1217.3930 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1219.8944 	EXP 	MARKER: 97
+1219.8965 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1221.8982 	EXP 	MARKER: 96
+1221.9012 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1227.9030 	EXP 	MARKER: 95
+1227.9053 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1228.9065 	EXP 	MARKER: 99
+1228.9077 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1233.9095 	EXP 	MARKER: 1
+1233.9106 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1236.4119 	EXP 	MARKER: 97
+1236.4130 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1238.4144 	EXP 	MARKER: 96
+1238.4172 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1244.4247 	EXP 	MARKER: 95
+1244.4255 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1245.4274 	EXP 	MARKER: 99
+1245.4281 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1250.4300 	EXP 	MARKER: 0
+1250.4308 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1252.9328 	EXP 	MARKER: 97
+1252.9337 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1254.9353 	EXP 	MARKER: 96
+1254.9362 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1260.9378 	EXP 	MARKER: 95
+1260.9409 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1261.9424 	EXP 	MARKER: 99
+1261.9438 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1266.9459 	EXP 	MARKER: 1
+1266.9467 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1269.4481 	EXP 	MARKER: 97
+1269.4489 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1271.4505 	EXP 	MARKER: 96
+1271.4512 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1277.4587 	EXP 	MARKER: 95
+1277.4594 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1278.4615 	EXP 	MARKER: 99
+1278.4624 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1283.4639 	EXP 	MARKER: 1
+1283.4647 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1285.9665 	EXP 	MARKER: 97
+1285.9674 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1287.9688 	EXP 	MARKER: 96
+1287.9702 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1293.9785 	EXP 	MARKER: 95
+1293.9812 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1294.9824 	EXP 	MARKER: 99
+1294.9835 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1299.9851 	EXP 	MARKER: 0
+1299.9874 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1302.4882 	EXP 	MARKER: 97
+1302.4901 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1304.4973 	EXP 	MARKER: 96
+1304.4985 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1310.5001 	EXP 	MARKER: 95
+1310.5012 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1311.5023 	EXP 	MARKER: 99
+1311.5031 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1316.5046 	EXP 	MARKER: 0
+1316.5055 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1319.0072 	EXP 	MARKER: 97
+1319.0081 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1321.0100 	EXP 	MARKER: 96
+1321.0110 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1327.0125 	EXP 	MARKER: 95
+1327.0137 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1328.0152 	EXP 	MARKER: 99
+1328.0162 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1333.0173 	EXP 	MARKER: 1
+1333.0181 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1335.5198 	EXP 	MARKER: 97
+1335.5206 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1337.5218 	EXP 	MARKER: 96
+1337.5226 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1343.5242 	EXP 	MARKER: 95
+1343.5251 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1344.5265 	EXP 	MARKER: 99
+1344.5274 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1349.5288 	EXP 	MARKER: 1
+1349.5297 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1352.0310 	EXP 	MARKER: 97
+1352.0326 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1354.0337 	EXP 	MARKER: 96
+1354.0345 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1360.0363 	EXP 	MARKER: 95
+1360.0370 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1361.0378 	EXP 	MARKER: 89
+1361.0385 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+1361.0420 	EXP 	MARKER: 94
+1363.4108 	DATA 	Keypress: escape
+1364.0023 	DATA 	Keypress: escape
+1364.1748 	DATA 	Keypress: escape
+1364.3151 	DATA 	Keypress: escape
+1364.4765 	DATA 	Keypress: escape
+1364.6362 	DATA 	Keypress: escape
+1365.0353 	DATA 	Keypress: return
+1365.4859 	DATA 	Keypress: return
+1365.6970 	DATA 	Keypress: return
+1365.8640 	DATA 	Keypress: return
+1366.6453 	DATA 	Keypress: lalt
+1445.1646 	DATA 	Keypress: escape
+1445.3845 	DATA 	Keypress: escape
+1445.5738 	DATA 	Keypress: escape
+1445.7319 	DATA 	Keypress: escape
+1597.8419 	DATA 	Mouse: Right button down, pos=(1438,246)
+1597.9582 	DATA 	Mouse:  Right button up, pos=(1438,246)
+1656.5821 	DATA 	Keypress: space
+1656.6614 	EXP 	MARKER: 93
+1656.6654 	ERROR 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
