@@ -110,8 +110,8 @@ X_train = scaler.fit_transform(X_train)
 ########################
 # === TEST SECTION ===
 ########################
-eeg_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_ExG.csv')
-markers_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_Marker.csv')
+eeg_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\004_002_2025-03-24-18h53.49.288_ExG.csv')
+markers_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\004_002_2025-03-24-18h53.49.288_Marker.csv')
 fs_test = 250
 eeg_data = eeg_df[["ch4", "ch1", "ch5"]].values.astype(np.float32)
 timestamps = eeg_df["TimeStamp"].values
@@ -129,6 +129,25 @@ for time, code in zip(markers_df["TimeStamp"], markers_df["Code"]):
 
 epochs = np.stack(epochs, axis=2)
 labels_test = np.array(labels_test)
+
+# === BAD EPOCH REJECTION ===
+# Step 1: Remove extreme peak-to-peak amplitude
+ptp = np.ptp(epochs, axis=1).max(axis=0)  # max P2P value across channels per epoch
+ptp_thresh = np.percentile(ptp, 95)
+good_idx_ptp = np.where(ptp < ptp_thresh)[0]
+
+# Step 2: Apply variance-based rejection on remaining
+epochs_filtered = epochs[:, :, good_idx_ptp]
+labels_filtered = labels_test[good_idx_ptp]
+
+var = np.var(epochs_filtered, axis=1).mean(axis=0)
+var_thresh = np.percentile(var, 95)
+good_idx_var = np.where(var < var_thresh)[0]
+
+# Final clean data
+epochs = epochs_filtered[:, :, good_idx_var]
+labels_test = labels_filtered[good_idx_var]
+
 
 epochs = bandpass(epochs, 8, 30, fs_test)
 test = apply_mix(W, epochs)
@@ -167,39 +186,4 @@ clf_params = {
 base_clf = GBC()
 model = tune_train_test_pipeline(base_clf, clf_params, X_train, y_train, X_test, y_test)
 
-from collections import Counter
 
-
-print("\n🧠 True Real-Time Simulation (Trial-by-Trial CSP + Feature + Predict)")
-correct = 0
-stats = Counter()
-
-for i, trial_raw in enumerate(epochs.transpose(2, 1, 0)):  # shape: (67, channels, samples)
-    trial = trial_raw[np.newaxis, :, :]  # shape: (1, ch, time)
-    trial = bandpass(trial.transpose(1, 2, 0), 8, 30, fs_test)  # match (ch, time, trials)
-
-    # Apply CSP
-    trial_csp = apply_mix(W, trial)
-
-    # Feature extraction
-    features_df = extract_features(trial_csp, (0, -1), None, fs=fs_test).drop('label', axis=1)
-
-    # Normalize using training stats
-    features_scaled = scaler.transform(features_df)
-
-    # Predict
-    pred = model.predict(features_scaled)[0]
-    true = labels_test[i]
-
-    match = "✅" if pred == true else "❌"
-    pred_label = "Left" if pred == 1 else "Right"
-    true_label = "Left" if true == 1 else "Right"
-    correct += int(pred == true)
-    stats[(true, pred)] += 1
-
-    print(f"Trial {i+1:>2} | True: {true_label:>5} | Pred: {pred_label:>5} | {match} | Acc: {correct/(i+1)*100:.2f}%")
-
-print(f"\n📊 Final Real-Time Accuracy: {correct}/{len(labels_test)} = {correct / len(labels_test) * 100:.2f}%")
-print("\n📉 Real-Time Confusion (True → Pred):")
-for (t, p), count in sorted(stats.items()):
-    print(f"  True: {'Left' if t == 1 else 'Right'} → Pred: {'Left' if p == 1 else 'Right'} = {count}")

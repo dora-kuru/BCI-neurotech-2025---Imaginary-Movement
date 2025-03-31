@@ -164,7 +164,7 @@ def clean_epochs_ica(epochs, threshold=150):
     return cleaned
 
 epochs_test = clean_epochs_ica(epochs_test, threshold=150)
-
+g
 
 W_loaded = np.load("trained_csp.npy")
 lda_loaded = joblib.load("trained_lda.pkl")

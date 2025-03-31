@@ -188,7 +188,7 @@ def main():
     exp_name = "imaginary_movement"
     exp_version = "v1"
 
-    stimuli = ['left_hand', 'right_hand']
+    stimuli = ['no_stim'] 
     n_reps_per_stimulus = 10
     trial_ids = np.repeat(np.arange(len(stimuli)), n_reps_per_stimulus)
 
@@ -208,9 +208,10 @@ def main():
     stimulus_task_combinations = ['/'.join(tup) for tup in list(itertools.product(stimuli, tasks))]
     max_marker_value = 99
     assert len(stimulus_task_combinations) < max_marker_value - len(cues)
-    label_dct = utils.list2dict(stimulus_task_combinations)
+    label_dct = utils.list2dict(stimulus_task_combinations, 1)
     cue_dct = utils.list2dict(cues, max_marker_value, -1)
     marker_dct = {**label_dct, **cue_dct}
+    print(label_dct)
 
     exp_name = os.path.splitext(os.path.basename(__file__))[0]
     data_rootdir = os.path.join(os.getcwd(), "data")
@@ -415,7 +416,11 @@ def main():
             while routineTimer.getTime() > 0:
                 check_escape(win, keys, explorer)
 
-            marker = marker_dct['perform']
+            # UPDATE bob
+            # marker = marker_dct['perform']
+            marker = trial_id + 1 
+            # simply send marker 1 = left, 2 = right
+            # trial id + 1 because sending 0 is not a good idea
             if doConnectExplorer:
                 win.callOnFlip(explorer.set_marker, marker)
             win.logOnFlip(level=logging.EXP, msg=f'MARKER: {marker}')
@@ -515,7 +520,7 @@ def main():
     label_dct = list2dict(stimulus_task_combinations)
     cue_dct = list2dict(cues, max_marker_value, -1)
     marker_dct = {**label_dct, **cue_dct}
-
+    print(label_dct)
 
     exp_name = os.path.splitext(os.path.basename(__file__))[0]
     data_rootdir = os.path.join(os.getcwd(), "data")
