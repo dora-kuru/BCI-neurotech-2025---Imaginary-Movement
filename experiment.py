@@ -417,7 +417,6 @@ def main():
             while routineTimer.getTime() > 0:
                 check_escape(win, keys, explorer)
 
-            # UPDATE bob
             marker = marker_dct['perform']
             if doConnectExplorer:
                 win.callOnFlip(explorer.set_marker, marker)
