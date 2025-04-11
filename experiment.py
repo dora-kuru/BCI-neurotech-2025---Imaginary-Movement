@@ -258,7 +258,7 @@ def main():
         eeg_sr = 250
         channel_dct = {
             0: 'TP9',
-            1: 'Fz', 2: 'C3', 3: 'Cz', 4: 'C4', 5: 'P3', 6: 'P4', 7: 'AFz', 8: 'TP10'
+            1: 'Fz', 2: 'C3', 3: 'Cz', 4: 'C4', 5: 'P3', 6: 'P4', 7: 'Fz', 8: 'TP10'
         }
 
         dlg = gui.DlgFromDict(dictionary=channel_dct, sortKeys=False, title="EEG channel info")
