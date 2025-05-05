@@ -6,7 +6,7 @@ import mne
 def main():
     #Headset Setup
     
-    headset_name = 'Explore_849D' 
+    headset_name = 'Explore_84FE' 
     sample_rate = 250
     channel_dict = {
             0: 'TP9',
@@ -39,6 +39,10 @@ def main():
 
     global mne_data
     mne_data = mne.io.RawArray(eeg_raw, info)
+    explorer.stop_recording()
+    explorer.disconnect()
+    
+
     
 
 

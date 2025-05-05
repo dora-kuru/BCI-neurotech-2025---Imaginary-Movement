@@ -3,8 +3,8 @@ import numpy as np
 import mne
 
 # --- Load EEG and marker data ---
-eeg_path = r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_ExG.csv'
-marker_path = r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_Marker.csv'
+eeg_path = r'data/expe1/v1/002_002_2025-03-24-17h47.37.040_ExG.csv'
+marker_path = r'data/expe1/v1/002_002_2025-03-24-17h47.37.040_Marker.csv'
 fs = 250  # sampling frequency
 
 eeg_df = pd.read_csv(eeg_path)

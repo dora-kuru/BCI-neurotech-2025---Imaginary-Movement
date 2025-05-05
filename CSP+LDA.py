@@ -59,7 +59,7 @@ def extract_features(trials_csp, labels_in):
 ########################
 # === TRAINING SECTION ===
 ########################
-mat_path = r'C:\Users\dorak\Documents\IMbci\BCICIV_1\BCICIV_calib_ds1d.mat'
+mat_path = r'BCICIV_1\BCICIV_calib_ds1d.mat'
 mat = loadmat(mat_path, struct_as_record=False, squeeze_me=True)
 cnt = mat['cnt'].astype(np.float32)
 mrk = mat['mrk']
@@ -110,8 +110,8 @@ np.save("trained_csp.npy", W)
 ########################
 # === TEST SECTION (Experimental CSV) ===
 ########################
-eeg_path = r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_ExG.csv'
-marker_path = r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_Marker.csv'
+eeg_path = r'data/expe1/v1/002_002_2025-03-24-17h47.37.040_ExG.csv'
+marker_path = r'data/expe1/v1/002_002_2025-03-24-17h47.37.040_Marker.csv'
 
 eeg_df = pd.read_csv(eeg_path)
 markers_df = pd.read_csv(marker_path)
@@ -164,7 +164,7 @@ def clean_epochs_ica(epochs, threshold=150):
     return cleaned
 
 epochs_test = clean_epochs_ica(epochs_test, threshold=150)
-g
+
 
 W_loaded = np.load("trained_csp.npy")
 lda_loaded = joblib.load("trained_lda.pkl")
