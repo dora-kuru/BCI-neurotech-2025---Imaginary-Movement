@@ -79,7 +79,7 @@ def extract_features(trials_time, CSP_components: tuple, label, fs=250):
 ########################
 # === TRAINING SECTION ===
 ########################
-mat = loadmat(r'C:\Users\dorak\Documents\IMbci\BCICIV_1\BCICIV_calib_ds1d.mat', struct_as_record=False, squeeze_me=True)
+mat = loadmat(r'BCICIV_1/BCICIV_calib_ds1d.mat', struct_as_record=False, squeeze_me=True)
 cnt = mat['cnt'].astype(np.float32)
 mrk = mat['mrk']
 nfo = mat['nfo']
@@ -110,8 +110,8 @@ X_train = scaler.fit_transform(X_train)
 ########################
 # === TEST SECTION ===
 ########################
-eeg_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\004_002_2025-03-24-18h53.49.288_ExG.csv')
-markers_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\004_002_2025-03-24-18h53.49.288_Marker.csv')
+eeg_df = pd.read_csv(r'data/expe1/v1/004_002_2025-03-24-18h53.49.288_ExG.csv')
+markers_df = pd.read_csv(r'data/expe1/v1/004_002_2025-03-24-18h53.49.288_Marker.csv')
 fs_test = 250
 eeg_data = eeg_df[["ch4", "ch1", "ch5"]].values.astype(np.float32)
 timestamps = eeg_df["TimeStamp"].values
