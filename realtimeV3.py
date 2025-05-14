@@ -3,6 +3,17 @@ from explorepy.stream_processor import TOPICS
 import numpy as np
 import time
 
+from scipy.signal import butter, lfilter
+
+def bandpass(data, lowcut, hicut ,sfreq, order):
+    nyquist = 0.5 * sfreq
+    low = lowcut / nyquist
+    high = hicut / nyquist
+    b, a = butter(order, [low, high], btype='band')
+    y = lfilter(b, a, data, axis=0)
+    return y
+
+    
 
 def parse_eeg_buffer(eeg_buffer, sampling_rate=250, window_size=1.0, selected_channels=None):
     """
@@ -53,10 +64,12 @@ def main():
 
     try:
         while True:
-            eeg_data =parse_eeg_buffer(eeg_buffer=eeg_list, sampling_rate=sample_rate,window_size=1.0, selected_channels=[2,3,4])
+            eeg_data =parse_eeg_buffer(eeg_buffer=eeg_list, sampling_rate=sample_rate,window_size=1.0, selected_channels=[1,2,3,4,5,6,7,8])
             time.sleep(1)
             print(eeg_data)
             #Start Pipeline
+            filtered_data = bandpass(eeg_data,8,30, sample_rate,4)
+            
             
     except KeyboardInterrupt:
         explorer.stop_recording()
