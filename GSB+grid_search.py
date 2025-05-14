@@ -108,14 +108,19 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 
 ########################
-# === TEST SECTION ===
+# === TEST SECTION (Fixed) ===
 ########################
-eeg_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\004_002_2025-03-24-18h53.49.288_ExG.csv')
-markers_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\004_002_2025-03-24-18h53.49.288_Marker.csv')
+eeg_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_ExG.csv')
+markers_df = pd.read_csv(r'C:\Users\dorak\Documents\IMbci\data\expe1\v1\002_002_2025-03-24-17h47.37.040_Marker.csv')
 fs_test = 250
 eeg_data = eeg_df[["ch4", "ch1", "ch5"]].values.astype(np.float32)
 timestamps = eeg_df["TimeStamp"].values
-label_map = {"sw_94": 1, "sw_95": 0}
+
+# ✅ Correct label mapping
+label_map = {
+    "sw_0": 1,  # left hand
+    "sw_1": 0   # right hand
+}
 
 epochs, labels_test = [], []
 epoch_len = int(3.0 * fs_test)
@@ -130,30 +135,22 @@ for time, code in zip(markers_df["TimeStamp"], markers_df["Code"]):
 epochs = np.stack(epochs, axis=2)
 labels_test = np.array(labels_test)
 
-# === BAD EPOCH REJECTION ===
-# Step 1: Remove extreme peak-to-peak amplitude
-ptp = np.ptp(epochs, axis=1).max(axis=0)  # max P2P value across channels per epoch
-ptp_thresh = np.percentile(ptp, 95)
-good_idx_ptp = np.where(ptp < ptp_thresh)[0]
-
-# Step 2: Apply variance-based rejection on remaining
-epochs_filtered = epochs[:, :, good_idx_ptp]
-labels_filtered = labels_test[good_idx_ptp]
-
-var = np.var(epochs_filtered, axis=1).mean(axis=0)
-var_thresh = np.percentile(var, 95)
-good_idx_var = np.where(var < var_thresh)[0]
-
-# Final clean data
-epochs = epochs_filtered[:, :, good_idx_var]
-labels_test = labels_filtered[good_idx_var]
-
-
+# ✅ Bandpass filter test data
 epochs = bandpass(epochs, 8, 30, fs_test)
-test = apply_mix(W, epochs)
+
+# ✅ Learn CSP for your test data
+trials_left = epochs[:, :, labels_test == 1]
+trials_right = epochs[:, :, labels_test == 0]
+W_test = csp(trials_left, trials_right)
+
+# ✅ Project using test CSP
+test = apply_mix(W_test, epochs)
+
+# ✅ Extract features and scale using BCI-trained scaler
 Xy_test = extract_features(test, (0, -1), None, fs_test)
 X_test = scaler.transform(Xy_test.drop('label', axis=1))
 y_test = labels_test[:X_test.shape[0]]
+
 
 ########################
 # === TRAIN CLASSIFIER ===
@@ -185,5 +182,4 @@ clf_params = {
 
 base_clf = GBC()
 model = tune_train_test_pipeline(base_clf, clf_params, X_train, y_train, X_test, y_test)
-
 
